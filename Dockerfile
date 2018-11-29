@@ -16,6 +16,6 @@ COPY load_data.sh /docker-entrypoint-initdb.d/001-load_data.sh
 
 WORKDIR /tmp
 COPY elixir_beacon_db_schema.sql /tmp/
-COPY sg10k.tar.gz /tmp/
+COPY test.txt /tmp/
 
 
