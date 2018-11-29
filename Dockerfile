@@ -1,9 +1,8 @@
-### Database is expected to listen on Port 5432
 FROM library/postgres:9.4.9
 
 RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
-MAINTAINER Lorenz Gerber <gerberlo@gis.a-star.edu.sg>
+MAINTAINER Mario Alberich <mario.alberich@crg.eu>
 RUN apt-get clean -y; \
     apt-get update -y -qq
 
