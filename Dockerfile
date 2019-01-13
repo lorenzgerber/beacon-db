@@ -16,5 +16,5 @@ COPY load_data.sh /docker-entrypoint-initdb.d/001-load_data.sh
 
 WORKDIR /tmp
 COPY elixir_beacon_db_schema.sql /tmp/
-COPY elixir_beacon_db_function.sql /tmp/
+COPY elixir_beacon_function.sql /tmp/
 
