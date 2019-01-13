@@ -14,5 +14,5 @@ PGPASSWORD=r783qjkldDsiu \
     psql -U microaccounts_dev -h localhost -d elixir_beacon_dev < /tmp/elixir_beacon_db_schema.sql
     psql -U microaccounts_dev -h localhost -d elixir_beacon_dev < /tmp/elixir_beacon_function.sql
     psql -U microaccounts_dev -h localhost -d elixir_beacon_testing < /tmp/elixir_beacon_db_schema.sql
-    psql -U microsccounts_dev -h localhost -d elixir_beacon_testing < /tmp/elixir_beacon_function.sql
+    psql -U microaccounts_dev -h localhost -d elixir_beacon_testing < /tmp/elixir_beacon_function.sql
 

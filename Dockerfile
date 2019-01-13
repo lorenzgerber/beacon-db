@@ -2,7 +2,7 @@ FROM library/postgres:9.4.9
 
 RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
-MAINTAINER Mario Alberich <lorenzottogerber@gmail.com>
+MAINTAINER Lorenz Gerber <lorenzottogerber@gmail.com>
 RUN apt-get clean -y; \
     apt-get update -y -qq
 
