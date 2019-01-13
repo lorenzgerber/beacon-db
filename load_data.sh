@@ -8,7 +8,7 @@ tar xvf sg10k.tar.gz
 echo "load dataset information into database"
 PGPASSWORD=r783qjkldDsiu \
     psql -U microaccounts_dev elixir_beacon_dev <<-EOSQL
-        INSERT INTO beacon_dataset (id, stable_id, description, access_type, reference_genome, variant_cnt, call_cnt, sample_cnt)
+        INSERT INTO beacon_dataset_table (id, stable_id, description, access_type, reference_genome, variant_cnt, call_cnt, sample_cnt)
         VALUES (1, 'sg10k', 'variants', 'PUBLIC', 'grch37', 1, 1, 1);
 EOSQL
 
