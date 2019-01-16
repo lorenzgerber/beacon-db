@@ -6,7 +6,7 @@ CREATE TABLE public.beacon_dataset_table
     access_type character varying(10),
     reference_genome character varying(50),
     variant_cnt integer NOT NULL,
-    call_cnt integer,
+    call_cnt bigint NOT NULL,
     sample_cnt integer NOT NULL,
     CONSTRAINT beacon_dataset_table_access_type_check CHECK (access_type = ANY (ARRAY['PUBLIC', 'REGISTERED', 'CONTROLLED']))
 );
