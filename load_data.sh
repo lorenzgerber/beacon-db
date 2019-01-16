@@ -37,3 +37,9 @@ PGPASSWORD=r783qkldDsiu \
         UPDATE beacon_dataset_table SET call_cnt =
         (SELECT sum(call_cnt) FROM beacon_data_table)
 EOSQL
+
+
+PGPASSWORD=r783qkldDsiu \
+    psql -U microaccounts_dev elixir_beacon_dev <<-EOSQL
+        UPDATE beacon_dataset_table SET sample_cnt = 110630;
+EOSQL
